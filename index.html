@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js" defer></script>
+    <title>Verificador de senha</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Verificador de senha</h2>
+        <p>Insira uma senha para verificar a força da senha</p>
+        <input type="password" id="passwordInput" placeholder="Digite sua senha">
+        <div class="password-strength-bar">
+            <div id="password-strength-indicator" class="strength-indicator"></div>
+        </div>
+
+        <p id="password-strength-text"></p>
+        <p id="tip">
+            Suas senhas devem conter letras maiúsculas e minúsculas, numeros e caracteres especiais
+        </p>
+    </div>
 </body>
 </html>
